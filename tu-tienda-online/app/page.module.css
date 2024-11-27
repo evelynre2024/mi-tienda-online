@@ -1,104 +1,57 @@
 .page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 32px;
-  font-family: var(--font-geist-sans);
-  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #4a4a4a;
+  background-color: #fef8f5;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
-  margin-bottom: 32px;
+  text-align: center;
+  background-color: #ffe5d9;
+  padding: 20px;
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px; /* Ajuste del espacio */
+  text-align: center;
+  margin: 20px;
 }
 
 .product {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
 }
 
-.productDetails {
-  text-align: center;
-  margin-top: 16px; /* Añadir margen para separar texto de la imagen */
-  margin-bottom: 16px; /* Añadir margen para separar el texto del botón */
+.productDetails h2 {
+  color: #6a5acd;
 }
 
 .buyButton {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: none;
-  background: var(--foreground);
-  color: var(--background);
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
-  transition: background 0.2s, color 0.2s;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: #ffe5d9;
+  color: #4a4a4a;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
 .buyButton:hover {
-  background: var(--button-primary-hover);
+  background-color: #ffcab0;
 }
 
 .footer {
-  margin-top: 32px;
-}
-
-.footer p {
-  font-size: 14px;
-}
-
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-  }
-
-  .main {
-    align-items: center;
-  }
-
-  .product {
-    align-items: center;
-  }
-
-  .buyButton {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  .footer {
-    text-align: center;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
+  text-align: center;
+  background-color: #ffe5d9;
+  padding: 10px;
 }
 
 
