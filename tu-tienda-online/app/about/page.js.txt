@@ -11,7 +11,7 @@ export default function Home() {
         <Image
           src="/Banner tienda.png" // Asegúrate de que este archivo esté en la carpeta "public"
           alt="Banner de la Tienda Salud"
-          width={1200} // Ajusta el tamaño según necesites
+          width={1200} // Ajusta el tamaño base
           height={400}
           priority
         />
@@ -30,7 +30,10 @@ export default function Home() {
           />
           <div className={styles.productDetails}>
             <h2>Guía para un Estilo de Vida Saludable</h2>
-            <p>Guía nutricional para personas con hipertensión. Descubre cómo mejorar tu salud de manera sencilla.</p>
+            <p>
+              Guía nutricional para personas con hipertensión. Descubre cómo
+              mejorar tu salud de manera sencilla.
+            </p>
             <a
               href="https://mpago.la/2wsBvQM" // Link de Mercado Pago
               target="_blank"
@@ -50,3 +53,5 @@ export default function Home() {
     </div>
   );
 }
+
+
