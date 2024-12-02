@@ -10,11 +10,12 @@ export default function Home() {
       {/* Banner de Tienda */}
       <header className={styles.header}>
         <Image
-          src="/Banner tienda.png" // Asegúrate de que este archivo esté en la carpeta "public"
+          src="/Banner_tienda.png" // Asegúrate de que este archivo esté en la carpeta "public"
           alt="Banner de la Tienda Salud"
           width={1200} // Ajusta el tamaño según necesites
           height={400}
           priority
+          className={styles.banner}
         />
       </header>
 
@@ -22,45 +23,51 @@ export default function Home() {
       <main className={styles.main}>
         <h1>Catálogo de libros electrónicos</h1>
 
-        {/* Primer eBook */}
-        <div className={styles.product}>
-          <Image
-            src="/portada-ebook.png" // Imagen de portada del primer eBook
-            alt="Portada del libro electrónico 1"
-            width={250}
-            height={350}
-          />
-          <div className={styles.productDetails}>
-            <p>Guía nutricional para personas con hipertensión. En este ebook encontrarás 30 recetas con ingredientes cuidadosamente seleccionados, que han demostrado contribuir al control de la presión arterial. Además, encontrarás algunas ideas de aderezos saludables para acompañar tus platos y una guía detallada de cómo sanitizar tus vegetales de forma correcta para tener un consumo seguro. ¡Espero que lo disfrutes!</p>
-            <a
-              href="https://mpago.la/2wsBvQM" // Link de Mercado Pago
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.buyButton}
-            >
-              Comprar por $15.000 ARS con Mercado Pago
-            </a>
+        <div className={styles.catalog}>
+          {/* Primer eBook */}
+          <div className={styles.product}>
+            <Image
+              src="/portada-ebook.png" // Imagen de portada del primer eBook
+              alt="Portada del libro electrónico sobre hipertensión"
+              width={250}
+              height={350}
+              className={styles.ebookCover}
+            />
+            <div className={styles.productDetails}>
+              <h2>Guía para un Estilo de Vida Saludable</h2>
+              <p>Guía nutricional para personas con hipertensión. Descubre cómo mejorar tu salud de manera sencilla.</p>
+              <a
+                href="https://mpago.la/2wsBvQM" // Link de Mercado Pago
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.buyButton}
+              >
+                Comprar por $15.000 ARS con Mercado Pago
+              </a>
+            </div>
           </div>
-        </div>
 
-        {/* Segundo eBook */}
-        <div className={styles.product}>
-          <Image
-            src="/portada-ebook-calcio.png" // Imagen de portada del segundo eBook
-            alt="Portada del libro electrónico 2"
-            width={250}
-            height={350}
-          />
-          <div className={styles.productDetails}>
-            <p>En este ebook encontrarás 12 deliciosas recetas altas en calcio vegetal. Además, información útil sobre las principales fuentes alimentarias de este mineral y cómo mejorar la biodisponibilidad a la hora de combinar alimentos. ¡Espero lo disfrutes!</p>
-            <a
-              href="https://mpago.la/tu-segundo-link" // Link de Mercado Pago para el segundo eBook
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.buyButton}
-            >
-              Comprar por $15.000 ARS con Mercado Pago
-            </a>
+          {/* Segundo eBook */}
+          <div className={styles.product}>
+            <Image
+              src="/portada-ebook-calcio.png" // Imagen de portada del segundo eBook
+              alt="Portada del libro electrónico sobre calcio"
+              width={250}
+              height={350}
+              className={styles.ebookCover}
+            />
+            <div className={styles.productDetails}>
+              <h2>12 Recetas Altas en Calcio</h2>
+              <p>En este ebook encontrarás 12 deliciosas recetas altas en calcio vegetal, además de información útil sobre las principales fuentes alimentarias de este mineral.</p>
+              <a
+                href="https://mpago.la/xxxxxx" // Link de Mercado Pago (por ahora se puede repetir el mismo)
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.buyButton}
+              >
+                Comprar por $15.000 ARS con Mercado Pago
+              </a>
+            </div>
           </div>
         </div>
       </main>
@@ -72,6 +79,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 

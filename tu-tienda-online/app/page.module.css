@@ -1,54 +1,92 @@
+/* Estilos generales de la página */
 .page {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+/* Estilo del banner */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.banner {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Contenido principal */
+.main {
+  text-align: center;
+}
+
+/* Estilo del catálogo */
+.catalog {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   align-items: center;
-  padding: 20px;
-  background-color: #fae3e3; /* Fondo pastel */
 }
 
-.header {
-  margin-bottom: 40px;
-}
-
-.main {
-  width: 100%;
-  max-width: 800px;
-}
-
+/* Estilo de cada producto (eBook) */
 .product {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ffffff; /* Fondo blanco para cada libro */
-  border-radius: 10px;
-  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
+  padding: 15px;
+  max-width: 300px;
+  width: 100%;
 }
 
+.ebookCover {
+  border-radius: 8px;
+}
+
+/* Detalles del producto */
 .productDetails {
+  margin-top: 10px;
   text-align: center;
-  margin-top: 15px;
 }
 
+.productDetails h2 {
+  font-size: 18px;
+  color: #333;
+}
+
+.productDetails p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Botón de compra */
 .buyButton {
-  background-color: #28a745; /* Verde para el botón de compra */
-  color: #ffffff;
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #28a745;
+  color: #fff;
   padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
   text-decoration: none;
-  margin-top: 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 .buyButton:hover {
-  background-color: #218838; /* Efecto hover */
+  background-color: #218838;
 }
 
+/* Estilo del pie de página */
 .footer {
-  margin-top: 40px;
-  color: #888888;
+  margin-top: 30px;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
 }
+
 
 
 
